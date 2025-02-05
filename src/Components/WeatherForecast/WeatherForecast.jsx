@@ -7,13 +7,15 @@ export default function WeatherForecast({ day, img, imgAlt, conditions, time }) 
   return (
     <div className="weather">
       
+      {/* `WeatherIcon` handles the weather icon image */}
+      <WeatherIcon img={img} alt={imgAlt} />
+      
       {/* `WeatherData` handles textual info */}
       <WeatherData day={day} conditions={conditions} time={time} />
       
     
       
-      {/* `WeatherIcon` handles the weather icon image */}
-      <WeatherIcon img={img} alt={imgAlt} />
+      
     
     </div>
   );
